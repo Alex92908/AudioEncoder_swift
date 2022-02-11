@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		605035572774725900E149E1 /* WaveEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605035562774725900E149E1 /* WaveEncoder.swift */; };
+		6050355A277579EA00E149E1 /* RSDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60503559277579EA00E149E1 /* RSDocument.swift */; };
+		6050355C27759DBF00E149E1 /* ZWDocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6050355B27759DBF00E149E1 /* ZWDocumentBrowserViewController.swift */; };
+		60B937C927859F9200679DE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B937C827859F9200679DE2 /* Foundation.framework */; };
+		60B937D32785A45200679DE2 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 60B937D12785A45100679DE2 /* lib */; };
+		60B937D42785A45200679DE2 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 60B937D22785A45200679DE2 /* include */; };
+		60B937D82785A77B00679DE2 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B937D52785A47900679DE2 /* libmp3lame.a */; };
+		60BE5B782797EB3A00ECA3E9 /* libfdk-aac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BE5B772797EB3A00ECA3E9 /* libfdk-aac.a */; };
+		60BE5B7A2798080800ECA3E9 /* FDKAACEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE5B792798080800ECA3E9 /* FDKAACEncoder.swift */; };
+		60DBB7B42796C9C000502691 /* Mp3Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DBB7B32796C9C000502691 /* Mp3Encoder.swift */; };
+		81CEA47D234C1843007AF3F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CEA47C234C1843007AF3F3 /* AppDelegate.swift */; };
+		81CEA47F234C1843007AF3F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CEA47E234C1843007AF3F3 /* SceneDelegate.swift */; };
+		81CEA481234C1843007AF3F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CEA480234C1843007AF3F3 /* ViewController.swift */; };
+		81CEA484234C1843007AF3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CEA482234C1843007AF3F3 /* Main.storyboard */; };
+		81CEA486234C1844007AF3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CEA485234C1844007AF3F3 /* Assets.xcassets */; };
+		81CEA489234C1844007AF3F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CEA487234C1844007AF3F3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		605035562774725900E149E1 /* WaveEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveEncoder.swift; sourceTree = "<group>"; };
+		605035582775658200E149E1 /* recordSound.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = recordSound.entitlements; sourceTree = "<group>"; };
+		60503559277579EA00E149E1 /* RSDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSDocument.swift; sourceTree = "<group>"; };
+		6050355B27759DBF00E149E1 /* ZWDocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWDocumentBrowserViewController.swift; sourceTree = "<group>"; };
+		60B937C827859F9200679DE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60B937D12785A45100679DE2 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		60B937D22785A45200679DE2 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		60B937D52785A47900679DE2 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp3lame.a; path = recordSound/lame/lib/libmp3lame.a; sourceTree = "<group>"; };
+		60B937D72785A55E00679DE2 /* recordSound_bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = recordSound_bridging_Header.h; sourceTree = "<group>"; };
+		60BE5B702797EB3A00ECA3E9 /* syslib_channelMapDescr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syslib_channelMapDescr.h; sourceTree = "<group>"; };
+		60BE5B712797EB3A00ECA3E9 /* aacdecoder_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aacdecoder_lib.h; sourceTree = "<group>"; };
+		60BE5B722797EB3A00ECA3E9 /* machine_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = machine_type.h; sourceTree = "<group>"; };
+		60BE5B732797EB3A00ECA3E9 /* aacenc_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aacenc_lib.h; sourceTree = "<group>"; };
+		60BE5B742797EB3A00ECA3E9 /* genericStds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genericStds.h; sourceTree = "<group>"; };
+		60BE5B752797EB3A00ECA3E9 /* FDK_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDK_audio.h; sourceTree = "<group>"; };
+		60BE5B772797EB3A00ECA3E9 /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfdk-aac.a"; sourceTree = "<group>"; };
+		60BE5B792798080800ECA3E9 /* FDKAACEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDKAACEncoder.swift; sourceTree = "<group>"; };
+		60DBB7B32796C9C000502691 /* Mp3Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp3Encoder.swift; sourceTree = "<group>"; };
+		81CEA479234C1843007AF3F3 /* recordSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recordSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81CEA47C234C1843007AF3F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81CEA47E234C1843007AF3F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		81CEA480234C1843007AF3F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81CEA483234C1843007AF3F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81CEA485234C1844007AF3F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81CEA488234C1844007AF3F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81CEA48A234C1844007AF3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81CEA476234C1843007AF3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BE5B782797EB3A00ECA3E9 /* libfdk-aac.a in Frameworks */,
+				60B937D82785A77B00679DE2 /* libmp3lame.a in Frameworks */,
+				60B937C927859F9200679DE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60B937C1278599F300679DE2 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				60DBB7B32796C9C000502691 /* Mp3Encoder.swift */,
+				60BE5B792798080800ECA3E9 /* FDKAACEncoder.swift */,
+				605035562774725900E149E1 /* WaveEncoder.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		60B937C727859F9200679DE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B937D52785A47900679DE2 /* libmp3lame.a */,
+				60B937C827859F9200679DE2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60B937D02785A43500679DE2 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				60B937D22785A45200679DE2 /* include */,
+				60B937D12785A45100679DE2 /* lib */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		60BE5B6D2797EB3A00ECA3E9 /* fdk-aac-ios */ = {
+			isa = PBXGroup;
+			children = (
+				60BE5B6E2797EB3A00ECA3E9 /* include */,
+				60BE5B762797EB3A00ECA3E9 /* lib */,
+			);
+			path = "fdk-aac-ios";
+			sourceTree = "<group>";
+		};
+		60BE5B6E2797EB3A00ECA3E9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				60BE5B6F2797EB3A00ECA3E9 /* fdk-aac */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		60BE5B6F2797EB3A00ECA3E9 /* fdk-aac */ = {
+			isa = PBXGroup;
+			children = (
+				60BE5B702797EB3A00ECA3E9 /* syslib_channelMapDescr.h */,
+				60BE5B712797EB3A00ECA3E9 /* aacdecoder_lib.h */,
+				60BE5B722797EB3A00ECA3E9 /* machine_type.h */,
+				60BE5B732797EB3A00ECA3E9 /* aacenc_lib.h */,
+				60BE5B742797EB3A00ECA3E9 /* genericStds.h */,
+				60BE5B752797EB3A00ECA3E9 /* FDK_audio.h */,
+			);
+			path = "fdk-aac";
+			sourceTree = "<group>";
+		};
+		60BE5B762797EB3A00ECA3E9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				60BE5B772797EB3A00ECA3E9 /* libfdk-aac.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		81CEA470234C1843007AF3F3 = {
+			isa = PBXGroup;
+			children = (
+				81CEA47B234C1843007AF3F3 /* recordSound */,
+				81CEA47A234C1843007AF3F3 /* Products */,
+				60B937C727859F9200679DE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81CEA47A234C1843007AF3F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81CEA479234C1843007AF3F3 /* recordSound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81CEA47B234C1843007AF3F3 /* recordSound */ = {
+			isa = PBXGroup;
+			children = (
+				605035582775658200E149E1 /* recordSound.entitlements */,
+				81CEA47C234C1843007AF3F3 /* AppDelegate.swift */,
+				81CEA47E234C1843007AF3F3 /* SceneDelegate.swift */,
+				81CEA480234C1843007AF3F3 /* ViewController.swift */,
+				60503559277579EA00E149E1 /* RSDocument.swift */,
+				6050355B27759DBF00E149E1 /* ZWDocumentBrowserViewController.swift */,
+				60BE5B6D2797EB3A00ECA3E9 /* fdk-aac-ios */,
+				60B937D02785A43500679DE2 /* lame */,
+				60B937C1278599F300679DE2 /* Encoder */,
+				81CEA482234C1843007AF3F3 /* Main.storyboard */,
+				81CEA485234C1844007AF3F3 /* Assets.xcassets */,
+				81CEA487234C1844007AF3F3 /* LaunchScreen.storyboard */,
+				60B937D72785A55E00679DE2 /* recordSound_bridging_Header.h */,
+				81CEA48A234C1844007AF3F3 /* Info.plist */,
+			);
+			path = recordSound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81CEA478234C1843007AF3F3 /* recordSound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81CEA48D234C1844007AF3F3 /* Build configuration list for PBXNativeTarget "recordSound" */;
+			buildPhases = (
+				81CEA475234C1843007AF3F3 /* Sources */,
+				81CEA476234C1843007AF3F3 /* Frameworks */,
+				81CEA477234C1843007AF3F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = recordSound;
+			productName = recordSound;
+			productReference = 81CEA479234C1843007AF3F3 /* recordSound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81CEA471234C1843007AF3F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "Matt Neuburg";
+				TargetAttributes = {
+					81CEA478234C1843007AF3F3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 81CEA474234C1843007AF3F3 /* Build configuration list for PBXProject "recordSound" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81CEA470234C1843007AF3F3;
+			productRefGroup = 81CEA47A234C1843007AF3F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81CEA478234C1843007AF3F3 /* recordSound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81CEA477234C1843007AF3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CEA489234C1844007AF3F3 /* LaunchScreen.storyboard in Resources */,
+				81CEA486234C1844007AF3F3 /* Assets.xcassets in Resources */,
+				60B937D32785A45200679DE2 /* lib in Resources */,
+				60B937D42785A45200679DE2 /* include in Resources */,
+				81CEA484234C1843007AF3F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81CEA475234C1843007AF3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BE5B7A2798080800ECA3E9 /* FDKAACEncoder.swift in Sources */,
+				6050355A277579EA00E149E1 /* RSDocument.swift in Sources */,
+				605035572774725900E149E1 /* WaveEncoder.swift in Sources */,
+				81CEA481234C1843007AF3F3 /* ViewController.swift in Sources */,
+				81CEA47D234C1843007AF3F3 /* AppDelegate.swift in Sources */,
+				81CEA47F234C1843007AF3F3 /* SceneDelegate.swift in Sources */,
+				60DBB7B42796C9C000502691 /* Mp3Encoder.swift in Sources */,
+				6050355C27759DBF00E149E1 /* ZWDocumentBrowserViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81CEA482234C1843007AF3F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81CEA483234C1843007AF3F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81CEA487234C1844007AF3F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81CEA488234C1844007AF3F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81CEA48B234C1844007AF3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81CEA48C234C1844007AF3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81CEA48E234C1844007AF3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = recordSound/recordSound.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LA29B32MQ;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/recordSound/lame/include/",
+					"$(PROJECT_DIR)/recordSound/fdk-aac-ios/include",
+				);
+				INFOPLIST_FILE = recordSound/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/recordSound/lame/lib",
+					"$(PROJECT_DIR)/recordSound/fdk-aac-ios/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuburg.matt.recordSound123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = recordSound/recordSound_bridging_Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81CEA48F234C1844007AF3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = recordSound/recordSound.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LA29B32MQ;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/recordSound/lame/include/",
+					"$(PROJECT_DIR)/recordSound/fdk-aac-ios/include",
+				);
+				INFOPLIST_FILE = recordSound/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/recordSound/lame/lib",
+					"$(PROJECT_DIR)/recordSound/fdk-aac-ios/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuburg.matt.recordSoundzzw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = recordSound/recordSound_bridging_Header.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81CEA474234C1843007AF3F3 /* Build configuration list for PBXProject "recordSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CEA48B234C1844007AF3F3 /* Debug */,
+				81CEA48C234C1844007AF3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81CEA48D234C1844007AF3F3 /* Build configuration list for PBXNativeTarget "recordSound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CEA48E234C1844007AF3F3 /* Debug */,
+				81CEA48F234C1844007AF3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81CEA471234C1843007AF3F3 /* Project object */;
+}
